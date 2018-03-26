@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
+	"github.com/barbershoplabs/ovrstat/api"
 	"github.com/labstack/echo"
-	"github.com/sdwolfe32/ovrstat/api"
 	"github.com/sirupsen/logrus"
 )
 
