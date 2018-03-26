@@ -1,9 +1,9 @@
 version: 2
 jobs:
   build:
-    working_directory: /go/src/github.com/sdwolfe32/ovrstat
+    working_directory: /go/src/github.com/barbershoplabs/ovrstat
     environment:
-      - DOCKER_TAG: sdwolfe32/ovrstat
+      - DOCKER_TAG: barbershoplabs/ovrstat
     docker:
       - image: circleci/golang:1.9.1
     steps:

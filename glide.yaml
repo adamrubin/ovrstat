@@ -1,4 +1,4 @@
-package: github.com/sdwolfe32/ovrstat
+package: github.com/barbershoplabs/ovrstat
 import:
 - package: github.com/PuerkitoBio/goquery
 - package: github.com/jinzhu/inflection

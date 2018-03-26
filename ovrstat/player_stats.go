@@ -135,6 +135,7 @@ func parseHeroStats(heroStatsSelector *goquery.Selection) map[string]*topHeroSta
 		categoryID = strings.Replace(categoryID, "overwatch.guid.0x0860000000000", "", -1)
 		heroGroupSel.Find("div.progress-2").Each(func(i2 int, statSel *goquery.Selection) {
 			heroName := cleanJSONKey(statSel.Find("div.title").Text())
+			heroName = strings.ToLower(heroName)
 			statVal := statSel.Find("div.description").Text()
 
 			// Creates hero map if it doesn't exist
@@ -198,6 +199,7 @@ func parseCareerStats(careerStatsSelector *goquery.Selection) map[string]*career
 	careerStatsSelector.Find("div.row div.js-stats").Each(func(i int, heroStatsSel *goquery.Selection) {
 		currentHero, _ := heroStatsSel.Attr("data-category-id")
 		currentHero = cleanJSONKey(heroMap[currentHero])
+		currentHero = strings.ToLower(currentHero)
 
 		// Iterates over every stat box
 		heroStatsSel.Find("div.column.xs-12").Each(func(i2 int, statBoxSel *goquery.Selection) {

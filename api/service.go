@@ -3,8 +3,8 @@ package api
 import (
 	"net/http"
 
+	"github.com/barbershoplabs/ovrstat/ovrstat"
 	"github.com/labstack/echo"
-	"github.com/sdwolfe32/ovrstat/ovrstat"
 	"github.com/sirupsen/logrus"
 )
 
