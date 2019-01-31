@@ -12,13 +12,24 @@ Note: This is a single endpoint web-scraping API that takes the full payload of 
 ```
 docker run -p 8080:8080 starboy/ovrstat
 ```
+
 ### Installing
 ```
-go get github.com/starboy/ovrstat/ovrstat
+$ brew install go
+$ brew install dep
+
+$ mkdir $HOME/Documents/GitHub/go/src/
+
+clone ovrstat in that src directory
+
+$ dep ensure
+$ go run main.go
 ```
+
+
 ### Usage
 
-You have two options for using the API: 
+You have two options for using the API:
 * Import the child dependency used in this API and use the API we host on Heroku
 * Host your own Ovrstat API using the public docker image `starboy/ovrstat`.
 

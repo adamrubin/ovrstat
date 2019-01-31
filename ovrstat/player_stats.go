@@ -68,6 +68,8 @@ func PCStats(region, tag string) (*PlayerStats, error) {
 
 // playerStats retrieves all Overwatch statistics for a given player
 func playerStats(profilePath string, platform string) (*PlayerStats, error) {
+	fmt.Printf("in playerStats22222 %t\n", true)
+
 	// Create the profile url for scraping
 	url := baseURL + profilePath
 
@@ -223,6 +225,8 @@ func parseHeroStats(heroStatsSelector *goquery.Selection) map[string]*topHeroSta
 
 // parseCareerStats
 func parseCareerStats(careerStatsSelector *goquery.Selection) map[string]*careerStats {
+	fmt.Printf("in parseCareerStats\n")
+
 	csMap := make(map[string]*careerStats)
 	heroMap := make(map[string]string)
 

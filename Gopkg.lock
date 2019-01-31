@@ -18,6 +18,14 @@
   version = "v1.0.0"
 
 [[projects]]
+  branch = "master"
+  digest = "1:c8cb3804758e498aeeffcc065fa4511da4848a6bdeb98cff42e76dad302b4021"
+  name = "github.com/barbershoplabs/ovrstat"
+  packages = ["ovrstat"]
+  pruneopts = "UT"
+  revision = "595b2af16d02a294a9d56c6b740c371ff3335418"
+
+[[projects]]
   digest = "1:76dc72490af7174349349838f2fe118996381b31ea83243812a97e5a0fd5ed55"
   name = "github.com/dgrijalva/jwt-go"
   packages = ["."]
@@ -132,6 +140,7 @@
   analyzer-version = 1
   input-imports = [
     "github.com/PuerkitoBio/goquery",
+    "github.com/barbershoplabs/ovrstat/ovrstat",
     "github.com/jinzhu/inflection",
     "github.com/labstack/echo",
     "github.com/labstack/echo/middleware",
